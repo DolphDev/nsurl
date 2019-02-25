@@ -24,13 +24,6 @@ def shard_generator(shards):
         else:
             raise ValueError("Shard can not be type: {}".format(type(shard)))
 
-def shard_object_extract(shards):
-    store = dict()
-    for shard in shards:
-        if isinstance(shard, Shard):
-            store.update(shard.tail_gen())
-    return store
-
 class Shard(object):
 
     """Shard Object
