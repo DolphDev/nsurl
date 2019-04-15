@@ -5,7 +5,7 @@ Copyright (c) 2019 Joshua W.
 """
 
 
-version = '0.0.1'
+version = '0.0.1a'
 
 from setuptools import setup
 setup(name='nsurl',
